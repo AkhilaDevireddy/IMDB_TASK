@@ -1,2 +1,0 @@
-# IMDB_TASK
-Task
