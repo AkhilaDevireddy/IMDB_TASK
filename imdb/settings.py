@@ -25,7 +25,7 @@ SECRET_KEY = 'g(d9yjz5itt&td#mr=h8jb8ssva=_=zr9c0!u)6=opozwfcaq&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://imdb-task-1.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['imdb-task-1.herokuapp.com', 'localhost']
 
 
 # Application definition
