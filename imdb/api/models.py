@@ -3,7 +3,7 @@ from django_mysql.models import ListTextField
 
 
 class IMDB(models.Model):
-    name_director = models.CharField(primary_key=True, default='0000000', max_length=100)
+    name_director = models.CharField(primary_key=True, max_length=100)
     name = models.CharField(max_length=100)
     director = models.CharField(max_length=50)
     imdb_score = models.FloatField()

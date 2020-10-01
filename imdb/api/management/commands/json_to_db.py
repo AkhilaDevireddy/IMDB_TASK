@@ -16,16 +16,10 @@ class Command(BaseCommand):
                             help='Transfer imdb data from json file to db')
 
     def handle(self, *args, **options):
-        # Reading scan results from the json file
         file_path = os.path.normpath(options['filePath'])
         file = open(file_path, 'r')
         imdb_content = json.load(file)
         file.close()
-
-        # Get the latest scan date from the AWS SSM Parameter Store.
-        
-        # invalid_records_obj = IMDB.objects.filter(scan_date__date=latest_scan_date, is_scan_valid=True)
-        # invalid_records_obj.update(is_scan_valid=False)
 
         for content in imdb_content:
 
